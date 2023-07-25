@@ -12,36 +12,34 @@
     <body>
 
         <div class="form-container">
-
-        <form action="logout.html" action="" name="myForm" onsubmit="return validate_Form()" method="post">
+        <form action="/" name="myForm" onsubmit="return validate_Form()"  method="post">
 
          <div class="form_input" id="username" >   
         <label for="username">Username</label>
-        <input type="text" name="username"  placeholder="Enter your username"  />
+        <input type="text" name="username" class="input_field" placeholder="Enter your username"   />
         <span class="form_error"></span>
         </div>
 
         <div class="form_input" id="email"> 
         <label for="email">Email</label>
-        <input type="email" name="email"  placeholder="Enter your email address"  />
+        <input type="email" name="email" class="input_field" placeholder="Enter your email address" required  />
         <span class="form_error"></span>
         </div>
 
         <div class="form_input" id="password"> 
         <label for="passwrod">Password</label>
-        <input type="password" name="password"  placeholder="Enter your password" />
+        <input type="password" name="password" class="input_field" placeholder="Enter your password" />
         <span class="form_error"></span>
         </div>
 
 
         <div class="form_input" id="confirm_password">
         <label for="confirm_password">Confirm Password</label>
-        <input type="password" name="confirm_password"  placeholder="Confirm your password"  />
+        <input type="password" name="confirm_password" class="input_field" placeholder="Confirm your password"  />
         <span class="form_error"></span>
         </div>
 
         <button class="submit_button" type="submit">Submit</button>
-
 
     </form>
 
