@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="form-container">
+
+        <form action="logout.html" action="" name="myForm" onsubmit="return validate_Form()" method="post">
+
+         <div class="form_input" id="username" >   
+        <label for="username">Username</label>
+        <input type="text" name="username"  placeholder="Enter your username"  />
+        <span class="form_error"></span>
+        </div>
+
+        <div class="form_input" id="email"> 
+        <label for="email">Email</label>
+        <input type="email" name="email"  placeholder="Enter your email address"  />
+        <span class="form_error"></span>
+        </div>
+
+        <div class="form_input" id="password"> 
+        <label for="passwrod">Password</label>
+        <input type="password" name="password"  placeholder="Enter your password" />
+        <span class="form_error"></span>
+        </div>
+
+
+        <div class="form_input" id="confirm_password">
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password"  placeholder="Confirm your password"  />
+        <span class="form_error"></span>
+        </div>
+
+        <button class="submit_button" type="submit">Submit</button>
+
+
+    </form>
+
+</div>
+
+        <script src="index.js" async defer></script>
+    </body>
+</html>
